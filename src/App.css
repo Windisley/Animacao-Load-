@@ -5,15 +5,24 @@
   display: grid;
   place-items: center;
   background-color: #f1f1f1;
+
 }
 
 .container .circle{
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   margin: 0 auto;
   border-radius: 50%;
   background-color: transparent;
   border: 10px solid var(--secundary-cor);
   border-top: 10px solid var(--primary-cor);
+  animation: circle 1.2s infinite linear;
+ 
+}
+
+@keyframes circle{
+  to{
+    transform: rotate(360deg);
+  }
 }
 
